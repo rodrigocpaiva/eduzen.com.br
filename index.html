@@ -3,69 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduZen - Em Breve</title>
+    <title>EduZen - Educação Socioemocional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body, html {
-            height: 100%;
+        /* Estilo geral */
+        body {
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
         }
-        .bg {
-            background-image: url(logo.png);
-            height: 100vh;
-            background-position: center;
-            background-repeat: no-repeat;
+
+        /* Menu de navegação */
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2ecc71;
+        }
+
+        /* Seção Hero Image */
+        .hero {
+            background-image: url('logo.png');
             background-size: cover;
+            background-position: center;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .content {
             text-align: center;
-            color: white;
-            background-color: rgba(0,0,0,0.5);
-            padding: 20px;
-            border-radius: 10px;
+            color: #fff;
         }
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px;
-            font-size: 0.8em;
-            color: #6c757d;
-        }
-        .footer-content {
+
+        .hero h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             max-width: 800px;
             margin: 0 auto;
         }
-        h2, h3 {
-            color: #495057;
+
+        /* Seção Sobre nós */
+        .about {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .about h2 {
+            color: #333;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about i {
+            color: #2ecc71;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Seção Contato */
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-info div {
+            margin: 20px;
+            padding: 30px;
+            background-color: #444;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 400px;
+        }
+
+        .contact-info i {
+            color: #2ecc71;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Seção Termo de uso */
+        .terms {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .terms h2 {
+            color: #333;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .terms ol {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .terms li {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .terms li strong {
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="bg">
-        <div class="content">
-            <h1>EduZen - Em Breve</h1>
-            <p>Estamos preparando algo incrível para você!</p>
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#about">Sobre nós</a>
+        <a href="#contact">Contato</a>
+        <a href="#terms">Termo de uso</a>
+    </nav>
+
+    <!-- Seção Hero Image -->
+    <div class="hero">
+        <h1>Eduzen - Educação Socioemocional</h1>
+    </div>
+
+    <!-- Seção Sobre nós -->
+    <div class="about" id="about">
+        <i class="fas fa-heart"></i>
+        <h2>Sobre nós</h2>
+        <p>A Eduzen é dedicada ao desenvolvimento das habilidades socioemocionais de crianças e adolescentes. Na Eduzen, respeitamos sua privacidade e seguimos a LGPD. Coletamos informações pessoais somente para oferecer nossos serviços de forma eficaz. Isso inclui dados como nome, email e informações de contato. Não compartilhamos suas informações com terceiros sem seu consentimento.</p>
+    </div>
+
+    <!-- Seção Contato -->
+    <div class="contact" id="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>rodrigo.campospaiva@gmail.com</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+55 11 99396-9030</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Trav. Augusta, 51 - Apto 62 - Jd Messina, Jundiaí - SP - 13207-492</p>
+            </div>
         </div>
     </div>
-    
-    <footer>
-        <div class="footer-content">
-            <h2>Eduzen - Educação Socioemocional</h2>
-            <p><strong>Sobre nós:</strong> A Eduzen é dedicada ao desenvolvimento das habilidades socioemocionais de crianças e adolescentes. Na Eduzen, respeitamos sua privacidade e seguimos a LGPD. Coletamos informações pessoais somente para oferecer nossos serviços de forma eficaz. Isso inclui dados como nome, email e informações de contato. Não compartilhamos suas informações com terceiros sem seu consentimento.</p>
-            <p><strong>Contato:</strong> rodrigo.campospaiva@gmail.com - ‪+55 11 99396‑9030‬ - Trav. Augusta, 51 - Apto 62 - Jd Messina, Jundiaí - SP - 13207-492</p>
-            
-            <h3>Termos de Serviço:</h3>
-            <ol>
-                <li><strong>Aceitação dos Termos:</strong> Ao usar nossos serviços, você concorda com estes termos. Se não concordar, por favor, não utilize nossos serviços.</li>
-                <li><strong>Serviços da Eduzen:</strong> A Eduzen oferece programas de educação socioemocional para crianças e adolescentes, visando desenvolver habilidades importantes como empatia e resiliência.</li>
-                <li><strong>Coleta de Informações:</strong> Coletamos informações como nome, email e telefone para oferecer nossos serviços. Respeitamos sua privacidade e seguimos a LGPD. Não compartilhamos suas informações com terceiros sem sua permissão.</li>
-                <li><strong>Uso Responsável:</strong> Você se compromete a usar nossos serviços de forma responsável e respeitosa. É proibido usar linguagem ofensiva ou compartilhar conteúdo inapropriado.</li>
-                <li><strong>Alterações nos Termos:</strong> Podemos atualizar estes termos ocasionalmente. Notificaremos você sobre mudanças importantes.</li>
-                <li><strong>Concordância:</strong> Ao utilizar nossos serviços, você concorda com estes Termos de Serviço.</li>
-            </ol>
-        </div>
-    </footer>
+
+    <!-- Seção Termo de uso -->
+    <div class="terms" id="terms">
+        <h2>Termos de Serviço</h2>
+        <ol>
+            <li><strong>Aceitação dos Termos:</strong> Ao usar nossos serviços, você concorda com estes termos. Se não concordar, por favor, não utilize nossos serviços.</li>
+            <li><strong>Serviços da Eduzen:</strong> A Eduzen oferece programas de educação socioemocional para crianças e adolescentes, visando desenvolver habilidades importantes como empatia e resiliência.</li>
+            <li><strong>Coleta de Informações:</strong> Coletamos informações como nome, email e telefone para oferecer nossos serviços. Respeitamos sua privacidade e seguimos a LGPD. Não compartilhamos suas informações com terceiros sem sua permissão.</li>
+            <li><strong>Uso Responsável:</strong> Você se compromete a usar nossos serviços de forma responsável e respeitosa. É proibido usar linguagem ofensiva ou compartilhar conteúdo inapropriado.</li>
+            <li><strong>Alterações nos Termos:</strong> Podemos atualizar estes termos ocasionalmente. Notificaremos você sobre mudanças importantes.</li>
+            <li><strong>Concordância:</strong> Ao utilizar nossos serviços, você concorda com estes Termos de Serviço.</li>
+        </ol>
+    </div>
 </body>
 </html>
